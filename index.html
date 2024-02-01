@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pomodoro">
+            <h2>Pomodoro Timer</h2>
+            <div class="timer" id="pomodoro-timer">00:00</div>
+            <button id="start-pomodoro">Start</button>
+            <button id="stop-pomodoro">Stop</button>
+            <input type="number" id="pomodoro-length" placeholder="Pomodoro length (minutes)">
+            <input type="number" id="break-length" placeholder="Break length (minutes)">
+            <div class="statistics">
+                <p>Sessions: <span id="pomodoro-sessions">0</span></p>
+                <p>Total Time: <span id="pomodoro-total-time">00:00:00</span></p>
+            </div>
+        </div>
+        <div class="stopwatch">
+            <h2>Stopwatch</h2>
+            <div class="timer" id="stopwatch-timer">00:00</div>
+            <button id="start-stopwatch">Start</button>
+            <button id="stop-stopwatch">Stop</button>
+            <button id="reset-stopwatch">Reset</button>
+            <div class="statistics">
+                <p>Sessions: <span id="stopwatch-sessions">0</span></p>
+                <p>Total Time: <span id="stopwatch-total-time">00:00:00</span></p>
+            </div>
+        </div>
+        <div class="todo-list">
+            <h2>To-Do List</h2>
+            <input type="text" id="task-input" placeholder="Enter task">
+            <button id="add-task">Add Task</button>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
